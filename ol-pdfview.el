@@ -2,6 +2,9 @@
 ;; This will open a pdf in org-mode if your default is pdf-tools and go to Page N
 ;; By: Tongjie Chen
 ;; My mod of org-goto line for pdf-view to go to page number.
+(require 'pdftools)
+(require 'orgmode)
+
 (defun org-open-file (path &optional in-emacs line search)
   "Open the file at PATH.
 First, this expands any special file name abbreviations.  Then the
@@ -438,3 +441,4 @@ non-nil."
 			       "::#" custom-id))
 	    (push (list link desc) org-stored-links)))
 	(car org-stored-links)))))
+(provide 'ol-pdfview)
