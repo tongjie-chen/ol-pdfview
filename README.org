@@ -1,0 +1,5 @@
+This is based on ol.el
+
+This file reloads org-link create and open link functions to put a ::N, N for page number.
+
+This will open a pdf in org-mode if your default is pdf-tools and go to Page N.
